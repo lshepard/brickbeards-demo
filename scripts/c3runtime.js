@@ -1323,9 +1323,9 @@ function or(l, r)
 
 self.C3_ExpressionFuncs = [
 		() => "Digging",
+		() => "Whip",
 		() => "Running",
 		() => "Jump",
-		() => "Whip",
 		() => "Fuse Grow",
 		() => "Jaguar idle",
 		() => "Idle",
@@ -1347,7 +1347,9 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => v0.GetValue();
 		},
-		() => 300
+		() => 300,
+		() => 3,
+		() => "Byte"
 ];
 
 

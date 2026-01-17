@@ -40,7 +40,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.AddVar,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Text.Acts.SetText,
-		C3.Plugins.System.Cnds.Compare
+		C3.Plugins.System.Cnds.Compare,
+		C3.Plugins.System.Acts.ResetEventVar
 	];
 };
 self.C3_JsPropNameTable = [
@@ -85,8 +86,6 @@ self.C3_JsPropNameTable = [
 	{HUDMAC: 0},
 	{Text: 0},
 	{Speech_Bubble_4: 0},
-	{Blank: 0},
-	{Artifact_Bar: 0},
 	{foundcoins: 0},
 	{foundmac: 0},
 	{foundvase: 0},
@@ -125,7 +124,5 @@ self.InstanceType = {
 	HUDCOINS: class extends self.ITiledBackgroundInstance {},
 	HUDMAC: class extends self.ITiledBackgroundInstance {},
 	Text: class extends self.ITextInstance {},
-	Speech_Bubble_4: class extends self.ITiledBackgroundInstance {},
-	Blank: class extends self.ITiledBackgroundInstance {},
-	Artifact_Bar: class extends self.ITiledBackgroundInstance {}
+	Speech_Bubble_4: class extends self.ITiledBackgroundInstance {}
 }
